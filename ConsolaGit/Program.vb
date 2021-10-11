@@ -3,11 +3,11 @@ Imports System
 Module Program
     Sub Main(args As String())
 
+        Dim i As Integer = 0
 
-        Dim i As Integer = 10
-        While i > 0
-            Console.WriteLine(i)
-            i = i - 1
+        While i <= 10
+            Console.WriteLine(i * 2 + 1)
+            i = i + 1
 
         End While
 
