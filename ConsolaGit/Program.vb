@@ -4,14 +4,7 @@ Module Program
     Sub Main(args As String())
 
 
-        Dim i As Integer = 0
-
-        While i < 5
-            Console.WriteLine(i)
-
-            i = i + 1
-        End While
-
+        ' hay que sacar por la consola la tabla de multiplicar del 7
 
 
 
