@@ -11,14 +11,26 @@ Module Program
         lista(2) = 20
         lista(3) = 10
         lista(4) = 3
-        Dim total As Decimal
+
+        Dim numero As Integer
+        Console.WriteLine("dame el numero")
+
+        numero = Console.ReadLine()
+
+        Dim esta As Boolean = False
+
 
         For i = 0 To lista.Length - 1
-            total = total + lista(i)
-        Next
-        Dim media = total / lista.Length
-        Console.WriteLine(media)
 
+            If numero = lista(i) Then
+                esta = True
+            End If
+        Next
+
+        If esta Then
+            Console.WriteLine("encontrado")
+
+        End If
 
 
 
