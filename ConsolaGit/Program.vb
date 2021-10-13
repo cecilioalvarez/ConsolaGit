@@ -13,18 +13,23 @@ Module Program
         lista(4) = 3
 
 
-
-        Dim suma As Integer = 0
+        ' una me va almacenando cual es el numero que por ahora 
+        'es el mayor
+        Dim mayor As Integer = 0
+        'la otra me almacena la posicion en la que se encuentra
+        Dim posicion = 0
 
         For i = 0 To lista.Length - 1
 
-            If (lista(i) >= 10) Then
-                suma = suma + lista(i)
+            If (lista(i) > mayor) Then
+                mayor = lista(i)
+                posicion = i
+
             End If
 
         Next
 
-        Console.WriteLine(suma)
+        Console.WriteLine(posicion)
 
     End Sub
 End Module
