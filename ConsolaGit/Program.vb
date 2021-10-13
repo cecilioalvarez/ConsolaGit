@@ -22,7 +22,7 @@ Module Program
         ' el bucle do while 
         Do
             'bucle se ejecuta una vez al menos
-            Console.WriteLine("hola do while")
+            Console.WriteLine(k)
             k = k + 1
         Loop Until k > 10
 
