@@ -11,6 +11,7 @@ Module Program
         sumar(numero1, numero2)
         sumar(7, 4)
         sumar(10, 2)
+        mayor(2, 4)
 
 
     End Sub
@@ -21,6 +22,18 @@ Module Program
         Console.WriteLine("*****************")
         Console.WriteLine(a + b)
         Console.WriteLine("*******************")
+
+    End Sub
+
+    Sub mayor(a As Integer, b As Integer)
+
+        If a > b Then
+            Console.WriteLine("el mayor es " & a)
+        Else
+            Console.WriteLine("el mayor es " & b)
+
+        End If
+
 
     End Sub
 End Module
