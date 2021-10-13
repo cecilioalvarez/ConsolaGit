@@ -4,27 +4,23 @@ Module Program
     Sub Main(args As String())
 
 
-        For i = 0 To 10 Step 2
-            'incremento de 1 en 1 por defecto
-            Console.WriteLine("hola")
+        Dim lista(5) As Integer
 
-        Next
-        Dim j As Integer
+        lista(0) = 2
+        lista(1) = 25
+        lista(2) = 20
+        lista(3) = 10
+        lista(4) = 3
 
-        While j < 10
-            Console.WriteLine(j)
-            j = j + 1
+        Console.WriteLine(lista(0))
+        Console.WriteLine(lista(1))
+        Console.WriteLine(lista(2))
+        Console.WriteLine(lista(3))
+        Console.WriteLine(lista(4))
 
-        End While
-        Dim k As Integer = 0
 
-        k = 11
-        ' el bucle do while 
-        Do
-            'bucle se ejecuta una vez al menos
-            Console.WriteLine(k)
-            k = k + 1
-        Loop Until k > 10
+
+
 
 
     End Sub
