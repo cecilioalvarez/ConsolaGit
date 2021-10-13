@@ -14,18 +14,17 @@ Module Program
 
 
 
-        Dim numero As Integer = 0
+        Dim suma As Integer = 0
 
         For i = 0 To lista.Length - 1
 
-            If (numero < lista(i)) Then
-
-                numero = lista(i)
+            If (lista(i) >= 10) Then
+                suma = suma + lista(i)
             End If
 
         Next
 
-        Console.WriteLine(numero)
+        Console.WriteLine(suma)
 
     End Sub
 End Module
