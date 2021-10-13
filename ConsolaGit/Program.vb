@@ -18,17 +18,23 @@ Module Program
         numero = Console.ReadLine()
 
         Dim esta As Boolean = False
+        Dim posicion As Integer
 
 
         For i = 0 To lista.Length - 1
 
             If numero = lista(i) Then
                 esta = True
+                posicion = i
             End If
         Next
 
+
+
         If esta Then
             Console.WriteLine("encontrado")
+            Console.WriteLine(posicion)
+
 
         End If
 
