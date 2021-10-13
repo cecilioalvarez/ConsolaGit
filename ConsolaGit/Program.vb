@@ -4,41 +4,23 @@ Module Program
     Sub Main(args As String())
 
 
-        Dim lista(4) As Integer
 
-        lista(0) = 2
-        lista(1) = 25
-        lista(2) = 20
-        lista(3) = 10
-        lista(4) = 3
-
-        Dim numero As Integer
-        Console.WriteLine("dame el numero")
-
-        numero = Console.ReadLine()
-
-        Dim esta As Boolean = False
-        Dim posicion As Integer
+        Dim numero1 As Integer = 2
+        Dim numero2 As Integer = 3
+        'invocacion del codigo de la funcion
+        sumar(numero1, numero2)
+        sumar(7, 4)
+        sumar(10, 2)
 
 
-        For i = 0 To lista.Length - 1
-
-            If numero = lista(i) Then
-                esta = True
-                posicion = i
-            End If
-        Next
-
-
-
-        If esta Then
-            Console.WriteLine("encontrado")
-            Console.WriteLine(posicion)
-
-
-        End If
-
-
+    End Sub
+    ' que se reutiliza en otras secciones del programa
+    Sub sumar(a As Integer, b As Integer)
+        ' este es el codigo que tu necesitas
+        ' y lo vas a reutilizar varias veces 
+        Console.WriteLine("*****************")
+        Console.WriteLine(a + b)
+        Console.WriteLine("*******************")
 
     End Sub
 End Module
